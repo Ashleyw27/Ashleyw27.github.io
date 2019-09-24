@@ -3,20 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio - Ashley Wegwerth</title>
+        <!--Bootstrap CDN-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--External CSS Stylesheet-->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
         <header>
-            <div id="name">
-                <h1>Ashley Wegwerth</h1>
-            </div>
-             <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-             </nav>
+             <!--Bootstrap Navbar copied from getbootstrap.com Documentation-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Ashley Wegwerth</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                  </div>
+                </div>
+              </nav>
         </header>
+
+        <!--Project boxes: Bootstrap Grid-->
         <section class="container">
           <div class="row">
             <div class="col-md-12" class="title">
@@ -79,6 +89,8 @@
           <div class="col-md-9"></div>
         </div>
         </section>
+
+        <!--Sticky footer-->
         <footer>
             Copyright&copy;
         </footer>

@@ -27,6 +27,14 @@ header {
     z-index: 2;
 }
 
+.navbar-light .navbar-brand {
+    color: white;
+    background-color: #4aaaa5;
+    font-weight: bold;
+    padding: 11px;
+}
+
+
 .container {
     width: 960px;
     margin: 0 auto;
@@ -38,23 +46,7 @@ header {
     flex: 1 0 auto;
 }
 
-#name {
-    background-color: #4aaaa5;
-    padding: 10px;
-    text-align: center;
-    width: 360px; 
-    color: white;
-    height: 73px;
-    float: left;
-    margin-left: 205px;
-}
 
-nav {
-    color: #777777;
-    float: right;
-    padding: 20px;
-    margin-right: 170px;
-}
 
 .title {
     border-bottom: 1px solid #dddddd;
@@ -115,13 +107,6 @@ p {
     float: clear;
 }
 
-input, textarea {
-    width: 960px;
-}
-
-textarea {
-    height: 200px;
-}
 
 .btn {
     background-color: #4aaaa5;
