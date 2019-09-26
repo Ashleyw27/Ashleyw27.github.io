@@ -9,7 +9,7 @@ The site was built to be user-friendly, easy to navigate, and responsive. Each s
 Twitter Bootstrap
 
 ## What I Learned
-I learned many new concepts and skills creating this responsive portfolio. A few of which include:
+I learned many new concepts and skills while creating this responsive portfolio. A few of which include:
 * The benefits of bootstrap
 * How and where to add a bootstrap CDN link
 * How to incorporate bootstrap components
