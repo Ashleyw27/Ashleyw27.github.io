@@ -113,6 +113,12 @@ p {
     width: 100px;
 }
 
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+  }
+
 footer {
     background-color: #666666;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
