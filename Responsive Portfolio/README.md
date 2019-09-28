@@ -15,3 +15,4 @@ I learned many new concepts and skills while creating this responsive portfolio.
 * How to incorporate bootstrap components
 * How to manipulate the pre-defined CSS that comes along with bootstrap
 * How to use devtools to inspect my code
+* Media Queries
