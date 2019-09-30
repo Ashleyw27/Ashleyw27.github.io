@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Password Generator</title>
+
+        <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--External CSS Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+
+    <!--Password Generator-->
+    <div class="container">
+      <!--"Generate a Password" Title-->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Generate a Password</h2>
+        </div>
+      </div>
+
+      <!--Textarea-->
+      <div class="row">
+        <div class="col-md-12 text">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+       </div>
+
+       <!--Buttons-->
+       <div class="row">
+         <div class="col-md-6">
+           <button id="generate" onclick="promptMe()">Generate Password</button>
+         </div>
+         <div class="col-md-6">
+           <button id="copy">
+            Copy to Clipboard
+           </button>
+         </div>
+      </div>
+     </div>
+     <!--End of Password Generator-->
+
+     <script>
+       function promptMe(){
+       var passwordLength = prompt("Choose the length of your password (must be between 8 and 128 characters).");
+
+       if (passwordLength >= 8 && passwordLength <= 128) {
+       }
+
+       else if (passwordLength < 8) {
+         alert("Password must be at least 8 characters");
+         return;
+       }
+
+       else if (passwordLength > 128) {
+         alert("Password must be less than 128 characters");
+         return;
+       }
+
+       else {
+         alert("Please enter a number between 8 and 128");
+         return;
+       }
+
+       var specialChar = confirm("Do you want your password to have special characters?");
+       var numChar = confirm("Do you want your password to have numbers?");
+       var lowerChar = confirm("Do you want your password to have lower case letters?");
+       var upperChar = confirm("Do you want your password to have upper case letters?");
+      
+       if (specialChar || numChar || lowerChar || upperChar) { 
+       }
+
+       else {
+         alert("You must have at least one special character, number, lower case letter, or upper case letter.");
+       }
+      }
+
+  
+
+      
+
+    
+
+
+   
+
+     </script>
+  </body>
+</html>
