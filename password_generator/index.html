@@ -45,21 +45,21 @@
        <!--Buttons-->
        <div class="row">
          <div class="col-md-6">
-           <button id="generate" onclick="promptMe()">Generate Password</button>
+           <button id="generate" onclick = "promptMe()">Generate Password</button>
          </div>
          <div class="col-md-6">
-           <button id="copy">
-            Copy to Clipboard
-           </button>
+           <button id="copy" onclick = "copyPass()">Copy to Clipboard</button>
          </div>
       </div>
      </div>
      <!--End of Password Generator-->
-
+ 
+     <!--JavaScript-->
      <script>
+       // Prompting user for desired length of password //
        function promptMe(){
        var passwordLength = prompt("Choose the length of your password (must be between 8 and 128 characters).");
-
+       
        if (passwordLength >= 8 && passwordLength <= 128) {
        }
 
@@ -78,28 +78,85 @@
          return;
        }
 
+       // Asking user to confirm types of characters to use in password //
        var specialChar = confirm("Do you want your password to have special characters?");
        var numChar = confirm("Do you want your password to have numbers?");
        var lowerChar = confirm("Do you want your password to have lower case letters?");
        var upperChar = confirm("Do you want your password to have upper case letters?");
       
        if (specialChar || numChar || lowerChar || upperChar) { 
+         console.log("yes");
        }
 
        else {
          alert("You must have at least one special character, number, lower case letter, or upper case letter.");
        }
-      }
-
-  
-
+      
       
 
+     //Creating a master array based on the users character preferences//
+     
+     var special = ["@","#","$","%","^","&","*","(","!",")","+"];
+      var nums = [1,2,3,4,5,6,7,8,9];
+      var lower = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+      var upper = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+     var master = [];
+     console.log(special);
+
+     if (specialChar === true) {
+       for (var i = 0; i < special.length; i++) {
+        master.push(special[i]);
+       }
+       
+     }
+
+     if (numChar === true) {
+      for (var i = 0; i < nums.length; i++) {
+        master.push(nums[i]);
+       }
+       
+     }
+
+     if (lowerChar === true) {
+      for (var i = 0; i <lower.length; i++) {
+        master.push(lower[i]);
+       }
+     }
+
+     if (upperChar === true) {
+      for (var i = 0; i < upper.length; i++) {
+        master.push(upper[i]);
+       }
+     }
+
+     //Generating a random password from the master array based on the users chosen password length//
     
+      var myPassword = "";
 
+      for (var i = 0; i < passwordLength; i++) {
+        var rand = master[Math.floor(Math.random() * master.length)];
+            myPassword = myPassword + rand;
+            console.log(rand);
+        
+      //writing the password to the page//     
+         document.getElementById("password").innerHTML = myPassword;
+      }   
+    }
+      //copying the password to the clipboard - code copied from w3schools.com//
+      function copyPass() {
+      var copyText = document.getElementById("password");
 
-   
+       /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
+       /* Copy the text inside the text field */
+      document.execCommand("copy");
+
+       /* Alert the copied text */
+      alert("Copied the text: " + copyText.value);
+}
      </script>
   </body>
 </html>
