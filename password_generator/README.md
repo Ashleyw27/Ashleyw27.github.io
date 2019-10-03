@@ -21,9 +21,8 @@ Below is a snapshot of this simple and easy-to-opporate password generator. As w
   
 ## What I Learned
 I learned many new concepts and skills while creating this password generator. A few of which include:
-* How functions work
-* How to structure objects  
+* How functions work 
 * The best uses for For Loops
 * What variables are and how to declare them
-* What an index is and the proper way to count them (starting from 0)
+* What an index is and the proper way to count indices (starting from 0)
 * The benefits of arrays
