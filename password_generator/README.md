@@ -8,7 +8,7 @@ After all the parameters are chosen a randomized password will appear on the scr
 
 Below is a snapshot of this simple and easy-to-opporate password generator. As well as a link to the generator itself. Feel free to try it out!
 
-![password](/images/passwordgen.png)
+![password](assets/images/passwordgen.png)
 
 [Password Generator](https://ashleyw27.github.io/password_generator/)
 
