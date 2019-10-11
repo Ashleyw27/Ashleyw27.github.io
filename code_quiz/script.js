@@ -142,7 +142,7 @@ function updatePage(answer) {
     if(questionNumber > 4) {
         donePage()
     }
-
+  
     else {
         console.log(questions[questionNumber]);
         var quizQues = questions[questionNumber].title;
@@ -162,11 +162,15 @@ function updatePage(answer) {
 
 
 
-
 /*The donePage records the user's score and allows them to type in their initials and submit their score
    to the highscores page*/
 function donePage() {
-    score = timer;
+    if (timer === 0) {
+        score = 0;
+    }
+    else {
+        score = timer;
+    }
 
     var verbiage = ("Your score is: " + score);
     totalScore.innerHTML = verbiage;
