@@ -11,20 +11,16 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  width: 100%;
-  height: 79px;
+  width: 80%;
 }
 
 .jumbotron {
   text-align: center;
+  background-image: url(../images/full-bloom.png);
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-}
-
-.col-md-1, .col-md-10 {
-    padding: 0px;
 }
 
 .description{
@@ -75,8 +71,6 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  height: 80px;
-  width: 80px;
 }
 
 .saveBtn i:hover {
