@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //Getting the text from local storage and adding it to the textarea//
     if (localStorage.getItem("9")) {
         var task =  JSON.parse(localStorage.getItem("9"));
         $("#nineAm").val(task);
@@ -57,6 +58,7 @@ $(document).ready(function() {
     //Global variables//
     var currentHour = moment().hour();
     console.log(currentHour);
+    var clearScores = $(".clear");
     
     
     //Current Date//
@@ -178,6 +180,13 @@ $(document).ready(function() {
     else {
         $(".17").attr("class", "future");
     }
+
+    //Clearing local storage and schedule //
+    $(".clear").on("click", function(event) {
+        event.preventDefault();
+        window.localStorage.clear();
+        window.location.reload();
+  });
     
     });
 
