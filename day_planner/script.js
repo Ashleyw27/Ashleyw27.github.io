@@ -181,7 +181,7 @@ $(document).ready(function() {
         $(".17").attr("class", "future");
     }
 
-    //Clearing local storage and schedule //
+    //Clearing local storage and clearing schedule //
     $(".clear").on("click", function(event) {
         event.preventDefault();
         window.localStorage.clear();
