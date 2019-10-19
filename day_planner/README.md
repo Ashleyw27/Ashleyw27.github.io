@@ -1,25 +1,22 @@
 # Day Planner - Ashley Wegwerth
 ## Description and Usage
-This quiz was built to test the user's knowlege of code! 
+This day planner was created to help keep track of your daily to-do's so you never miss an important task.
 
-Upon clicking the start button, the code quiz takes the user through a series of five code related questions. If the user gets a question correct a message will appear on the screen that says "Correct!", however if the user gets a question wrong the message with say "Wrong!" and the user's time will be deducted by 10 seconds. 
+Upon opening the day planner the current day will display at the very top and each time block will change color based on the hour of the day: Gray = past hour(s), red = present hour, and green = future hour(s).
 
-If time reaches "0" before all the questions can be answered, the game is over and the user's score will be "0". If all the questions are answered and there is still time left on the clock, that time will now equal the user's score. 
+Type a task into a specific time block and click the save button located at the far right of that time block. Doing this will save your task for that time. Once all of your tasks are complete, click the "Clear Schedule" button at the bottom of the day planner and you will be ready to start tomorrow with a clean slate.
 
-At the end of the questions the user will be able to document their scores by typing their initials into a form and submitting them to the High Scores board. Clicking the "Clear Scores" button will erase all the scores from the roster. Clicking the "Go Back" button will bring the user to the start page where they can take the quiz again and try to beat their previous score.
-
-[Click here to test your knowledge of code!](https://ashleyw27.github.io/code_quiz/)
+[Click here to plan your day!](https://ashleyw27.github.io/day_planner/)
 
 ## Technology
 * HTML
 * CSS
 * Bootstrap
-* JavaScript
+* jQuery
   
 ## What I Learned
-I learned many new concepts and skills while creating this code quiz. A few of which include:
-* The difference between global variables and local variables and how each can be used
-* Functions should not be nested inside Events
+I learned many new concepts and skills while creating this day planner. A few of which include:
+* How to use the Moment.js library
+* The basic syntax of jQuery
 * Committing early and often is very important!
-* How to set the attribute of a variable in JavaScript
-* The benefits of JSON stringify and parse
+
