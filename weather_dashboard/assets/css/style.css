@@ -10,6 +10,14 @@
     color: white;
 }
 
+.city-btn {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: rgb(32, 32, 143);
+    color: white;
+    border-radius: 5px;
+}
+
 .current-weather {
     border: 1px solid black;
     padding: 10px;
