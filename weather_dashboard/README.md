@@ -1,4 +1,4 @@
-# Weather Dashboard - Ashley Wegwerth
+# Weather Dashboard
 ## Description and Usage
 This weather dashboard is powered by the AerisWeather API (a company located right here in Minnesota!). By typing a city and state code (Ex: minneapolis,mn) into the search field and clicking the "Search" button the current weather and 5-day forecast will be returned to you for that particular city. The current weather includes the tempurature, humidity, wind speed, and UV index. The 5-day forecast includes the max and min temperature and average humidity for that day.
 
