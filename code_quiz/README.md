@@ -1,4 +1,4 @@
-# Code Quiz - Ashley Wegwerth
+# Code Quiz
 ## Description and Usage
 This quiz was built to test the user's knowlege of code! 
 
