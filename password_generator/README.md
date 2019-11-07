@@ -1,4 +1,4 @@
-# Password Generator - Ashley Wegwerth
+# Password Generator
 ## Description and Usage
 This tool was built to generate a password based on the users preferences including password length and the types of characters that the user would like included in the password (symbols, numbers, lower case letters, and/or upper case letters). To run the program the user will press the *Generate Password* button and a prompt will appear on the page asking the user to specify the desired length of their password. The user must choose between 8 and 128 characters. If they choose outside of those parameters they will receive an alert asking them to choose again. 
 
