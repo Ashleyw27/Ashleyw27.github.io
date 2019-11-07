@@ -1,4 +1,4 @@
-# Portfolio - Ashley Wegwerth
+# Portfolio
 ## Description
 This portfolio serves multiple purposes. It shares a little bit about me in the **About** section, including a short desctiption of my current capabilities, why I love coding, and what I do for fun. It will soon showcase my abilities as a coder through projects I will complete which will be able to be viewed in the **Portfolio** section. Finally, it will give readers the ability to contact me via a form in the **Contact** section. 
 
