@@ -2,6 +2,8 @@
 ## Description
 This portfolio serves multiple purposes. It shares a little bit about me in the **About** section, including a short desctiption of my current capabilities, why I love coding, and what I do for fun. It will soon showcase my abilities as a coder through projects I will complete which will be able to be viewed in the **Portfolio** section. Finally, it will give readers the ability to contact me via a form in the **Contact** section. 
 
+[Click here to view the Portfolio!](https://ashleyw27.github.io/portfolio/)
+
 ## Usage
 The site was built to be user-friendly and easy to navigate. Each section can be accessed by clicking the links in the navigation bar located on the top right of each page.
 
