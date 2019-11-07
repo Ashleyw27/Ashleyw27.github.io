@@ -1,4 +1,4 @@
-# Day Planner - Ashley Wegwerth
+# Day Planner
 ## Description and Usage
 This day planner was created to help keep track of your daily to-do's so you never miss an important task.
 
