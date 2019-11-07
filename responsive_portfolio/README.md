@@ -2,7 +2,7 @@
 ## Description
 This responsive portfolio is a replica of my original portfolio I created, but includes a few tweaks. I utilized a bootstrap CDN link within my 'head' tag which allowed me to utilize bootstrap's built-in responsiveness as well as incorporate bootstrap components within my code. Some of these components include a navbar and a contact form.
 
-[Click here to view the Responsive Portfolio!](https://ashleyw27.github.io/weather_dashboard/)
+[Click here to view the Responsive Portfolio!](https://ashleyw27.github.io/responsive_portfolio/)
 
 ## Usage
 The site was built to be user-friendly, easy to navigate, and responsive. Each section can be accessed by clicking the links in the navigation bar located on the top left of each page. The site will also automatically resize when the viewer's screen is made smaller or larger.
