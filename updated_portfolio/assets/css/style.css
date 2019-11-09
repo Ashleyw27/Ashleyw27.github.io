@@ -3,8 +3,6 @@ html {
 }
 
 body {
-    background-image: url(../images/desk.jpg);
-    background-position: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -24,6 +22,19 @@ header {
     z-index: 2;
 }
 
+.behind {
+    background-image: url(../images/desk.jpg);
+    background-position: center;
+}
+
+.background {
+    background-image: url(../images/blank.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
 .name {
     font-family: 'Noto Sans KR', sans-serif;
     color: #4a9faa;
@@ -38,8 +49,21 @@ header {
     border: 1px solid #dddddd;
     padding: 30px;
     margin-top: 125px;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
     flex: 1 0 auto;
+}
+
+.container2 {
+    width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    flex: 1 0 auto;
+    border: 2px solid #777777;
+    border-radius: 35px;
+    background-color: #fafafc;
+    opacity: .97;
 }
 
 .title {
@@ -61,11 +85,19 @@ img {
 }
 
 #me {
-    height: 230px;
+    height: 370px;
     width: 290px;
     float: left;
     margin-right: 20px;
     margin-top: 15px;
+}
+
+#me2 {
+    height: 230px;
+    width: 290px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin: 0 auto;
 }
 
 .about-me {
@@ -74,6 +106,33 @@ img {
     float: clear;
     margin-top: 10px;
     line-height: 34px;
+}
+
+.about-me2 {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    float: clear;
+    margin-top: 10px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.about-link {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    text-align: center;
+    font-size: 24px;
+}
+
+.about-link2 {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #9ec273;
 }
 
 .card-text {
