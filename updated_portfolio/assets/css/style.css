@@ -24,6 +24,7 @@ header {
 
 .behind {
     background-image: url(../images/desk.jpg);
+    height: 100%;
     background-position: center;
 }
 
@@ -190,7 +191,9 @@ label {
 .email, .phone, .resume {
     font-size: 18px;
     font-family: 'Noto Sans KR', sans-serif;
+    color: #777777;
 }
+
 
 
 @media only screen and (max-width : 992px) {
