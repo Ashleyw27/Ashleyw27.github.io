@@ -5,9 +5,9 @@ Developer portfolio featuring a **Home** page with my brand statement and link t
 [Click here to view my portfolio!](https://ashleyw27.github.io/updated_portfolio/home.html)
 
 ## Technology
-HTML
-CSS
-Bootstrap
-Google Fonts
-FontAwesome
-Animate.css
+* HTML
+* CSS
+* Bootstrap
+* Google Fonts
+* FontAwesome
+* Animate.css
