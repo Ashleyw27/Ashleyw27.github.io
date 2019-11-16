@@ -1,0 +1,16 @@
+{
+  "name": "profile_generator",
+  "version": "1.0.0",
+  "description": "a profile generated based on user input and exported to pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashley Wegwerth",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "inquirer": "^7.0.0",
+    "util": "^0.12.1"
+  }
+}
