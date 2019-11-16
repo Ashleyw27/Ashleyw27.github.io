@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
+// const pdf = require('html-pdf');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -92,8 +93,79 @@ function generateHTML(answers, res, sum) {
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-      <title>Document</title>
+      <style>
+      body {
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .jumbotron {
+        background-color: lightgray;
+        width: 100%;
+        height: 400px;
+    }
+    
+    a {
+        color: white;
+    }
+    
+    .image {
+        height: 250px;
+        width: 250px;
+        border: 3px solid yellow;
+        border-radius: 150px;
+        position: absolute;
+        right: 41%;
+        top: -10px;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .info {
+        height: 375px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding-top: 240px;
+        text-align: center;
+        line-height: 12px;
+        font-size: 24px;
+        color: white;
+        border-radius: 15px;
+    }
+    
+    .container {
+        margin-top: 100px;
+        font-size: 24px;
+    }
+    
+    .bio {
+        width: 100%;
+        height: 150px;
+        color: black;
+        text-align: center;
+    }
+    
+    .repos, .followers, .stars, .following {
+        border-radius: 15px;
+        width: 100%;
+        height: 120px;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    footer {
+        background-color: lightgray;
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+      </style>
+      <title>Profile</title>
   </head>
 
   <body>
@@ -157,4 +229,30 @@ promptUser()
   .catch(function (err) {
     console.log(err);
   });
+
+  // async function init() { 
+  //   try {
+  //     const answers = await promptUser();
+  //     const res = await promptUser();
+  //     const sum = await promptUser();
+  
+  //     const html = generateHTML(answers, res, sum);  
+  //     await writeFileAsync("index.html", html);
+
+     
+  //     var readHtml = fs.readFileAsync('index.html', 'utf8');
+  //     var options = { format: 'Letter' };
+       
+  //     pdf.create(readHtml, options).toFile('profile.pdf', function(err, res) {
+  //       if (err) return console.log(err);
+  //       console.log(res); 
+  //     });
+  
+  //     console.log("Successfully wrote to index.html");
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
+  
+  // init();
 
