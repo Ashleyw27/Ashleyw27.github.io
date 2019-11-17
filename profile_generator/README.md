@@ -15,7 +15,7 @@ First, install the NPM packages required to properly run the application. Once a
 **Note:** It is important to note that the PDF that is generated will be from the last time the application was run. It will not display the information from the current run. This is a known bug that will be fixed in the future.
 
 
-[Click here to view the Profile Generator Demo](https://ashleyw27.github.io/password_generator/)
+[Click here to view the Profile Generator Demo](https://drive.google.com/drive/folders/1BmN_kcu5D0PyJAbO6OhP9A0ldTInjRVD)
 
 
 ## Technology
