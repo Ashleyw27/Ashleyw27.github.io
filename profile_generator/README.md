@@ -12,6 +12,8 @@ The Profile Generator application can be used to create a user profile outlining
 #### To run the application follow the below steps:
 First, install the NPM packages required to properly run the application. Once all required packages are installed, type "node index.js" into the command line. Answer each prompt as it appears: "What is your GitHub Username?" and "What is your favorite color?" (choose from the selection of colors provided). Once all prompts are answered, the index.html file will be updated with all the GitHub information associated with the username provided. It will also customize the color of the profile based on the "favorite color" chosen. Lastly, a PDF of the completed profile will be created.
 
+*Note:*It is important to note that the PDF that is generated will be from the last time the application was run. It will not display the information from the current run. This is a known bug that will be fixed in the future.
+
 
 ![profile](assets/images/passwordgen.png)
 
