@@ -9,7 +9,7 @@ The Profile Generator application can be used to create a user profile outlining
 * Bio
 * Number of public repositories, followers, GitHub stars, and following
 
-**To run the application follow the below steps:**
+#### To run the application follow the below steps:
 First, install the NPM packages required to properly run the application. Once all required packages are installed, type "node index.js" into the command line. Answer each prompt as it appears: "What is your GitHub Username?" and "What is your favorite color?" (choose from the selection of colors provided). Once all prompts are answered, the index.html file will be updated with all the GitHub information associated with the username provided. It will also customize the color of the profile based on the "favorite color" chosen. Lastly, a PDF of the completed profile will be created.
 
 
