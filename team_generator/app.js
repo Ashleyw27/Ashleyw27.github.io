@@ -73,7 +73,9 @@ function manager() {
                 }
         
                 .card {
-                    margin: 10px, 10px, 10px, 10px;
+                    margin: 10px, 20px, 10px, 20px;
+                    float: left;
+                    margin-left: 20px;
                 }
         
                 .fa-calculator {
@@ -87,7 +89,7 @@ function manager() {
             <div class="jumbotron">
                 <h1>Team Excellence</h1>
                 <p></p>
-            </div>)
+            </div>
 
             <div class="card" style="width: 18rem;">
         <div class="card-header">
