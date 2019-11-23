@@ -4,9 +4,9 @@ The Team Profile Generator application can be used to create a team profile outl
 * Team members: A Manager plus Engineers and/or Interns
 * Each team members name, ID, and email
 * Special information for each team member
-** Manager - Office Number
-** Engineer - GitHub Username
-** Intern - School
+  1. Manager - Office Number
+  2. Engineer - GitHub Username
+  3. Intern - School
 
 
 #### To run the application follow the below steps:
