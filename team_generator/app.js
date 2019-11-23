@@ -1,8 +1,10 @@
+//Requiring npm packages inquirer and fs
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 console.log("Build your team");
 
+//Prompting the user to answer questions about the Manager roll
 function manager() {
     return inquirer.prompt([
         {
@@ -26,9 +28,12 @@ function manager() {
             message: "What is your manager's office number?"
         }
 
+        //Taking the user's answers and using them to build/write to an html file creating a team members card
     ]).then(function (answers) {
         console.log(answers);
+        //Calling the Team function to see if the user wants to add anymore team members
         Team();
+        //Writing to the main.html file with the team members information
         fs.writeFile("./main.html", `<!DOCTYPE html>
         <html lang="en">
         
@@ -110,7 +115,7 @@ function manager() {
 
 };
 
-
+//Team function asks the user if they want to add more team members or complete their team
 function Team() {
     return inquirer.prompt([
         {
@@ -124,6 +129,7 @@ function Team() {
 
             ]
         }
+        //Based on if the user wants to add more team members or complete the team a switch function will run depending on the user's response
     ]).then(function (answer) {
         switch (answer.team) {
             case "Engineer": Engineer();
@@ -132,6 +138,7 @@ function Team() {
                 break;
             default:
                 console.log("******* Your team is complete. *******");
+                //Appending to the main.html file with the team members information
                 fs.appendFile("./main.html", "</body></html>", (err) => {
                     if (err)
                         throw err;
@@ -142,7 +149,7 @@ function Team() {
 
 
 
-
+//Prompting the user to answer questions about the Engineer roll
 function Engineer() {
     return inquirer.prompt([
         {
@@ -165,8 +172,11 @@ function Engineer() {
             name: "github",
             message: "What is your engineer's GitHub username?"
         },
+        //Taking the user's answers and using them to build/write to an html file creating a team members card
     ]).then(function (answers) {
+        //Calling the Team function to see if the user wants to add anymore team members
         Team();
+        //Appending to the main.html file with the team members information
         fs.appendFile("./main.html", `
                 <div class="card" style="width: 18rem;">
                     <div class="card-header">
@@ -186,7 +196,7 @@ function Engineer() {
     });
 };
 
-
+//Prompting the user to answer questions about the Intern roll
 function Intern() {
     return inquirer.prompt([
         {
@@ -209,8 +219,11 @@ function Intern() {
             name: "school",
             message: "What is your intern's school?"
         }
+        //Taking the user's answers and using them to build/write to an html file creating a team members card
     ]).then(function (answers) {
+        //Calling the Team function to see if the user wants to add anymore team members
         Team();
+        //Appending to the main.html file with the team members information
         fs.appendFile("./main.html", ` <div class="card" style="width: 18rem;">
         <div class="card-header">
             <p>${answers.name}</p>
@@ -229,5 +242,6 @@ function Intern() {
     });
 };
 
+//Calling the manager function
 manager();
 
