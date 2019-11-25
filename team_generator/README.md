@@ -13,7 +13,7 @@ The Team Profile Generator application can be used to create a team profile outl
 First, install the npm packages required to properly run the application. Once all required packages are installed, type "node app.js" into the command line and begin building your team. Start with a Manager and then add as many Engineers and Interns as needed. Once the team is complete select "No more. I'm all set" from the list of options. The entire team will then be written to the main.html file. Open this file to view the full team.
 
 
-[Click here to view the Team Profile Generator Demo](https://drive.google.com/drive/folders/1BmN_kcu5D0PyJAbO6OhP9A0ldTInjRVD)
+[Click here to view the Team Profile Generator Demo](https://drive.google.com/drive/folders/1bgsv4Ud4NJgOeFPKUtNskaoL_jf2j88L)
 
 
 ## Technology
