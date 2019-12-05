@@ -28,6 +28,7 @@ var saveNote = function(note) {
 var deleteNote = function(id) {
   return $.ajax({
     url: "api/notes/" + id,
+    data: "id=" + id,    
     method: "DELETE"
   });
 };
@@ -84,9 +85,11 @@ var handleNoteDelete = function(event) {
 
 // Sets the activeNote and displays it
 var handleNoteView = function() {
-  activeNote = $(this).data();
-  console.log($(this));
-  renderActiveNote();
+  var noteView = $(this).attr("id")
+  getNotes().then(function(data) {
+    activeNote = data[noteView];
+    renderActiveNote();
+  });
 };
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
@@ -114,7 +117,7 @@ var renderNoteList = function(notes) {
   for (var i = 0; i < notes.length; i++) {
     var note = notes[i];
 
-    var $li = $("<li class='list-group-item'>").data(note);
+    var $li = $("<li class='list-group-item' id='" + note.id +"'>");
     var $span = $("<span>").text(note.title);
     var $delBtn = $(
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"

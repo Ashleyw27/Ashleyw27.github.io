@@ -62,7 +62,7 @@ app.post("/api/notes", function (req, res) {
 
 // Delete Notes
 app.delete("/api/notes/:notes", function (req, res) {
-    var chosen = req.params.id;
+    var chosen = parseInt(req.body.id);
     notes.splice(chosen, 1);
     console.log(chosen);
 
