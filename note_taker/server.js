@@ -63,15 +63,20 @@ app.post("/api/notes", function (req, res) {
 // Delete Notes
 app.delete("/api/notes/:notes", function (req, res) {
     var chosen = req.params.id;
+    notes.splice(chosen, 1);
     console.log(chosen);
 
-    // for (var i = 0; i < notes.length; i++) {
-    //     if (chosen === notes[i].id) {
-    //         return res.json(notes[i]);
-    //     }
-    // }
-    // return res.json(false);
-});
+    for (var i = 0; i < notes.length; i++) {
+        notes[i].id = i;
+    }
+
+    var notesAfterDelete = JSON.stringify(notes);
+    fs.writeFile("db/db.json", notesAfterDelete, function (err) {
+        if (err) throw err
+    });
+    res.sendFile(path.join(__dirname, "public/notes.html"));
+ 
+    });
 
 // Starts the server to begin listening
 // =============================================================

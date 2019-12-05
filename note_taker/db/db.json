@@ -1,17 +1,1 @@
-[
-  {
-    "title": "New note",
-    "text": "Next note",
-    "id": 0
-  },
-  {
-    "title": "This note ",
-    "text": "this note",
-    "id": 1
-  },
-  {
-    "title": "Other note",
-    "text": "other note",
-    "id": 2
-  }
-]
+[{"title":"Note 6","text":"note six","id":0},{"title":"Note 7","text":"note seven","id":1},{"title":"Note 8","text":"note eight","id":2}]
