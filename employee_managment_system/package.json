@@ -1,0 +1,17 @@
+{
+  "name": "employee_managment_system",
+  "version": "1.0.0",
+  "description": "Management System for Employees",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashley Wegwerth",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.17.1",
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  }
+}
