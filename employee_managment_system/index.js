@@ -54,7 +54,7 @@ function start() {
           "View Employees by Role",
           "Add Employee",
           "Update Employee's Role",
-          "Remove Employee",
+          // "Remove Employee",
           "Quit"
         ]
     })
@@ -75,9 +75,9 @@ function start() {
       else if (answer.begin === "Update Employee's Role") {
         updateRole();
       }
-      else if (answer.begin === "Remove Employee") {
-        removeEmp();
-      }
+      // else if (answer.begin === "Remove Employee") {
+      //   removeEmp();
+      // }
       else if (answer.begin === "Quit") {
         console.log("====Goodbye====");
       }
@@ -377,34 +377,34 @@ function updateRole() {
 
 //Remove employee
 //========================================
-function removeEmp() {
-  connection.query("SELECT first_name, last_name FROM employee", function (err, result) {
-    if (err) throw err;
+// function removeEmp() {
+//   connection.query("SELECT first_name, last_name FROM employee", function (err, result) {
+//     if (err) throw err;
 
-    var choiceArray = [];
+//     var choiceArray = [];
 
-    for (var i = 0; i < result.length; i++) {
-      var choices = result[i].first_name + " " + result[i].last_name;
-      choiceArray.push(choices);
-    }
-    inquirer
-      .prompt({
-        name: "remove",
-        type: "list",
-        message: "Which employee would you like to remove?",
-        choices: choiceArray
-      })
-      .then(function (answer) {
-        connection.query("DELETE FROM employee WHERE ?",
-          {
-            first_name: answer.choiceArray
-          },
-          function (err, result) {
-            if (err) throw err;
+//     for (var i = 0; i < result.length; i++) {
+//       var choices = result[i].first_name + " " + result[i].last_name;
+//       choiceArray.push(choices);
+//     }
+//     inquirer
+//       .prompt({
+//         name: "remove",
+//         type: "list",
+//         message: "Which employee would you like to remove?",
+//         choices: choiceArray
+//       })
+//       .then(function (answer) {
+//         connection.query("DELETE FROM employee WHERE ?",
+//           {
+//             first_name: answer.choiceArray
+//           },
+//           function (err, result) {
+//             if (err) throw err;
 
-            console.log("=== Employee has been Removed ===");
-            start();
-          });
-      });
-  });
-}
+//             console.log("=== Employee has been Removed ===");
+//             start();
+//           });
+//       });
+//   });
+// }
