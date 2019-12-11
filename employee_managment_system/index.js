@@ -59,7 +59,7 @@ function start() {
         ]
     })
     .then(function (answer) {
-      // based on their answer, either call the bid or the post functions
+      // based on their answer, call the function
       if (answer.begin === "View All Employees") {
         viewAllEmp();
       }
@@ -90,7 +90,7 @@ function start() {
 //View all employees
 //========================================
 function viewAllEmp() {
-  connection.query("SELECT * FROM employee", /*INNER JOIN roles ON employee.role_id = roles.id INNER JOIN department ON roles.department_id = department.id"*/ function (err, result) {
+  connection.query("SELECT employee.id, employee.first_name, employee.last_name, employee.manager_id, roles.title, roles.salary, department.department FROM ((employee INNER JOIN roles ON employee.role_id = roles.id) INNER JOIN department ON roles.department_id = department.id)", function (err, result) {
     if (err) throw err;
 
     console.table(result);
@@ -110,7 +110,7 @@ function viewEmpDepartment() {
     })
     .then(function (answer) {
       if (answer.department === "Sales" || "Product" || "Engineering" || "Marketing") {
-        connection.query("SELECT employee.id as employee_id, employee.first_name, employee.last_name FROM employee INNER JOIN roles ON employee.role_id = roles.id INNER JOIN department ON roles.department_id = department.id WHERE department.department = ?", [answer.department], function (err, result) {
+        connection.query("SELECT employee.id, employee.first_name, employee.last_name, employee.manager_id, roles.title, roles.salary, department.department FROM ((employee INNER JOIN roles ON employee.role_id = roles.id) INNER JOIN department ON roles.department_id = department.id) WHERE department = ?", [answer.department], function (err, result) {
           if (err) throw err;
 
           console.table(result);
@@ -142,7 +142,7 @@ function viewEmpRole() {
     })
     .then(function (answer) {
       if (answer.role === "Divisional Sales Manager" || "Sales Assistant" || "Product Manager" || "Associate Product Manager" || "Design Engineer" || "Associate Engineer" || "Marketing Manager" || "Associate Marketing Manager") {
-        connection.query("SELECT * FROM employee INNER JOIN roles ON employee.role_id = roles.id WHERE title = ?", [answer.role], function (err, result) {
+        connection.query("SELECT employee.id, employee.first_name, employee.last_name, employee.manager_id, roles.title, roles.salary, department.department FROM ((employee INNER JOIN roles ON employee.role_id = roles.id) INNER JOIN department ON roles.department_id = department.id) WHERE title = ?", [answer.role], function (err, result) {
           if (err) throw err;
 
           console.table(result);
@@ -292,61 +292,120 @@ function addEmployee() {
 //Update employee role
 //========================================
 function updateRole() {
-  connection.query("SELECT first_name, last_name FROM employee", function(err, result) {
+  connection.query("SELECT first_name, last_name FROM employee", function (err, result) {
     if (err) throw err;
 
-  var choiceArray = [];
- 
-  for (var i = 0; i < result.length; i++) {
-   var choices = result[i].first_name + " " + result[i].last_name;
-   
-   choiceArray.push(choices);
-  }
-  inquirer
-    .prompt({
-      name: "title",
-      type: "list",
-      message: "Which employee would you like to update?",
-      choices: choiceArray
-    })
-//     .then(function (answer) {
-//       connection.query("UPDATE employee SET ? WHERE ?",
-//       {
+    var choiceArray = [];
 
+    for (var i = 0; i < result.length; i++) {
+      var choices = result[i].first_name + " " + result[i].last_name;
 
+      choiceArray.push(choices);
+    }
+    console.log(choiceArray);
+    inquirer
+      .prompt({
+        name: "title",
+        type: "list",
+        message: "Which employee would you like to update?",
+        choices: choiceArray
+      },
+        {
+          name: "new_title",
+          type: "list",
+          message: "What is the employee's new role?",
+          choices:
+            [
+              "Divisional Sales Manager",
+              "Sales Assistant",
+              "Product Manager",
+              "Associate Product Manager",
+              "Design Engineer",
+              "Associate Engineer",
+              "Marketing Manager",
+              "Associate Marketing Manager"
+            ]
+        })
+      .then(function (answer) {
+        var role_id;
+        if (answer.new_title === "Divisional Sales Manager") {
+          role_id = 1;
+        }
+        else if (answer.new_title === "Sales Assistant") {
+          role_id = 2;
+        }
+        else if (answer.new_title === "Product Manager") {
+          role_id = 3;
+        }
+        else if (answer.new_title === "Associate Product Manager") {
+          role_id = 4;
+        }
+        else if (answer.new_title === "Design Engineer") {
+          role_id = 5;
+        }
+        else if (answer.new_title === "Associate Engineer") {
+          role_id = 6;
+        }
+        else if (answer.new_title === "Marketing Manager") {
+          role_id = 6;
+        }
+        else if (answer.new_title === "Associate Marketing Manager") {
+          role_id = 6;
+        }
+        connection.query("UPDATE roles SET ?",
+          {
+            title: answer.new_title
+          },
+          function (err, result) {
+            if (err) throw err;
+          },
 
-//       }
-//     }
-})
+          connection.query("UPDATE employee SET ?",
+            {
+              role_id: role_id
+            },
+            function (err, result) {
+              if (err) throw err;
+
+              console.log("=== Updated Employee ===");
+              start();
+            }
+          )
+        )
+      });
+  })
 }
 
 //Remove employee
 //========================================
 function removeEmp() {
-  connection.query("SELECT first_name, last_name FROM employee", function(err, result) {
+  connection.query("SELECT first_name, last_name FROM employee", function (err, result) {
     if (err) throw err;
 
-  var choiceArray = [];
- 
-  for (var i = 0; i < result.length; i++) {
-   var choices = result[i].first_name + " " + result[i].last_name;
-   choiceArray.push(choices);
-  }
-  inquirer
-    .prompt({
-      name: "remove",
-      type: "list",
-      message: "Which employee would you like to remove?",
-      choices: choiceArray
-    })
-    // .then(function (answer) {
-    //   // connection.query("DELETE FROM employee WHERE...", function(err, result) {
-    //   //   if (err) throw err; 
+    var choiceArray = [];
 
-    //     console.log("=== Employee has been Removed ===");
-    //       viewAllEmp();
-    //       start();
-    //   // });
-    // });
-});
+    for (var i = 0; i < result.length; i++) {
+      var choices = result[i].first_name + " " + result[i].last_name;
+      choiceArray.push(choices);
+    }
+    inquirer
+      .prompt({
+        name: "remove",
+        type: "list",
+        message: "Which employee would you like to remove?",
+        choices: choiceArray
+      })
+      .then(function (answer) {
+        connection.query("DELETE FROM employee WHERE ?",
+          {
+            first_name: answer.choiceArray
+          },
+          function (err, result) {
+            if (err) throw err;
+
+            console.log("=== Employee has been Removed ===");
+            start();
+          });
+      });
+  });
 }
