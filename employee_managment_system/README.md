@@ -9,7 +9,7 @@ The user can choose from multiple menu options (outlined below) to select the ac
 * **Update Employee's Role** - Allows the user to update the role of an existing employee
 * **Quit** - Allows the user to exit the application
 
-
+![ems](assets/images/ems.png)
 
 
 ## Technology
