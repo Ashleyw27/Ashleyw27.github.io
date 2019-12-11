@@ -282,7 +282,6 @@ function addEmployee() {
           if (err) throw err;
 
           console.log("=== New Employee Added ===");
-          viewAllEmp();
           start();
         }
       );
@@ -302,16 +301,15 @@ function updateRole() {
 
       choiceArray.push(choices);
     }
-    console.log(choiceArray);
     inquirer
       .prompt({
-        name: "title",
+        name: "employee",
         type: "list",
         message: "Which employee would you like to update?",
         choices: choiceArray
       },
         {
-          name: "new_title",
+          name: "newTitle",
           type: "list",
           message: "What is the employee's new role?",
           choices:
@@ -327,34 +325,35 @@ function updateRole() {
             ]
         })
       .then(function (answer) {
+        console.log(answer.employee);
         var role_id;
-        if (answer.new_title === "Divisional Sales Manager") {
+        if (answer.newTitle === "Divisional Sales Manager") {
           role_id = 1;
         }
-        else if (answer.new_title === "Sales Assistant") {
+        else if (answer.newTitle === "Sales Assistant") {
           role_id = 2;
         }
-        else if (answer.new_title === "Product Manager") {
+        else if (answer.newTitle === "Product Manager") {
           role_id = 3;
         }
-        else if (answer.new_title === "Associate Product Manager") {
+        else if (answer.newTitle === "Associate Product Manager") {
           role_id = 4;
         }
-        else if (answer.new_title === "Design Engineer") {
+        else if (answer.newTitle === "Design Engineer") {
           role_id = 5;
         }
-        else if (answer.new_title === "Associate Engineer") {
+        else if (answer.newTitle === "Associate Engineer") {
           role_id = 6;
         }
-        else if (answer.new_title === "Marketing Manager") {
+        else if (answer.newTitle === "Marketing Manager") {
           role_id = 6;
         }
-        else if (answer.new_title === "Associate Marketing Manager") {
+        else if (answer.newTitle === "Associate Marketing Manager") {
           role_id = 6;
         }
-        connection.query("UPDATE roles SET ?",
+        connection.query("UPDATE roles SET ? JOIN roles",
           {
-            title: answer.new_title
+            title: answer.newTitle
           },
           function (err, result) {
             if (err) throw err;
