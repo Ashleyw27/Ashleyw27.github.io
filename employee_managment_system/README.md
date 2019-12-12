@@ -6,6 +6,8 @@ The user can choose from multiple menu options (outlined below) to select the ac
 * **View Employees by Department** - All employee information will display for the employees included in the department selected by the user
 * **View Employees by Role** - All employee information will disply for the employees included in the role selected by the user
 * **Add Employee** - Allows the user to add a new employee to the Employee Management System
+* **Add Department** - Allows the user to add a new department to the Employee Management System
+* **Add Role** - Allows the user to add a new role to the Employee Management System
 * **Update Employee's Role** - Allows the user to update the role of an existing employee
 * **Quit** - Allows the user to exit the application
 
