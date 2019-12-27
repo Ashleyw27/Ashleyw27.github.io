@@ -13,7 +13,7 @@ The user can simply write a title and description for their note or task by typi
 
 [Click here to view the Note Taker!](https://note-taker-application.herokuapp.com/)
 
-![note taker](assets/images/note-taker.png)
+![note taker](public/assets/images/note-taker.png)
 
 
 ## Technology
