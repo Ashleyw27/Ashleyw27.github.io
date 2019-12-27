@@ -11,11 +11,13 @@ This responsive portfolio is a replica of my original portfolio I created, but i
 
 [Click here to view the Responsive Portfolio!](https://ashleyw27.github.io/responsive_portfolio/)
 
-## Usage
-The site was built to be user-friendly, easy to navigate, and responsive. Each section can be accessed by clicking the links in the navigation bar located on the top left of each page. The site will also automatically resize when the viewer's screen is made smaller or larger.
+![responsive portfolio](assets/images/resp-portfolio.png)
+
 
 ## Technology
-Twitter Bootstrap
+HTML
+CSS
+Bootstrap
 
 ## What I Learned
 I learned many new concepts and skills while creating this responsive portfolio. A few of which include:
