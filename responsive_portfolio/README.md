@@ -15,9 +15,9 @@ This responsive portfolio is a replica of my original portfolio I created, but i
 
 
 ## Technology
-HTML
-CSS
-Bootstrap
+* HTML
+* CSS
+* Bootstrap
 
 ## What I Learned
 I learned many new concepts and skills while creating this responsive portfolio. A few of which include:
