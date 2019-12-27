@@ -14,6 +14,7 @@ If time reaches "0" before all the questions can be answered, the game is over a
 At the end of the questions the user will be able to document their scores by typing their initials into a form and submitting them to the High Scores board. Clicking the "Clear Scores" button will erase all the scores from the roster. Clicking the "Go Back" button will bring the user to the start page where they can take the quiz again and try to beat their previous score.
 
 [Click here to test your knowledge of code!](https://ashleyw27.github.io/code_quiz/)
+
 ![code quiz](assets/images/code-quiz.png)
 
 ## Technology
