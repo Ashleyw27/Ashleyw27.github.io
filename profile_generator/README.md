@@ -24,7 +24,7 @@ First, install the NPM packages required to properly run the application. Once a
 
 [Click here to view the Profile Generator Demo](https://drive.google.com/drive/folders/1BmN_kcu5D0PyJAbO6OhP9A0ldTInjRVD)
 
-![profile generator](public/assets/images/profile-generator.png)
+![profile generator](assets/images/profile-generator.png)
 
 
 ## Technology
