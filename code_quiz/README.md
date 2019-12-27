@@ -1,7 +1,9 @@
 # Code Quiz
 ## User Story
 As a coding bootcamp student
+
 I want to take a timed quiz on coding fundamentals that stores high scores
+
 So that I can gauge my progress compared to my peers
 
 ## Description and Usage
