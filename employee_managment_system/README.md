@@ -16,6 +16,8 @@ The user can choose from multiple menu options (outlined below) to select the ac
 * **Update Employee's Role** - Allows the user to update the role of an existing employee
 * **Quit** - Allows the user to exit the application
 
+[Click here to view the Employee Management System Demo](https://drive.google.com/file/d/1CzZbu9bVdHLGo2eryTZcyVyXmmgFBzvh/view?usp=sharing)
+
 ![ems](assets/images/ems.png)
 
 
