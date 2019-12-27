@@ -22,6 +22,8 @@ First, install the npm packages required to properly run the application. Once a
 
 [Click here to view the Team Profile Generator Demo](https://drive.google.com/file/d/1YcswImmeXJ7PChbxfsM79mloExzTy3dP/view?usp=sharing)
 
+![team generator](assets/images/team-generator.png)
+
 
 ## Technology
 * HTML
