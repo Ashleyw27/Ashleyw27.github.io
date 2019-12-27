@@ -222,9 +222,9 @@ postScore.addEventListener("click", function(event) {
 
 
 
-items.sort(function(a, b) {
-    console.log(b.score - a.score);
-    });
+// items.sort(function(a, b) {
+//     console.log(b.score - a.score);
+//     });
 
 
 
