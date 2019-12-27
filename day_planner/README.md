@@ -1,4 +1,9 @@
 # Day Planner
+## User Story
+As an employee with a busy schedule
+I want to add important events to a daily planner
+So that I can manage my time effectively
+
 ## Description and Usage
 This day planner was created to help keep track of your daily to-do's so you never miss an important task.
 
