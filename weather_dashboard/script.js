@@ -69,7 +69,7 @@ $("#search-btn").on("click", function(event) {
     localStorage.setItem("place", JSON.stringify(cities));
     console.log(cities);
     
-    //calling the render cities function and the display city info function//
+    //calling the render cities function//
     renderCities();
  
 
