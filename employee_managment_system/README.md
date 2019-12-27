@@ -1,4 +1,9 @@
 # Employee Management System
+## User Story
+As a business owner
+I want to be able to view and manage the departments, roles, and employees in my company
+So that I can organize and plan my business
+
 ## Description and Usage
 The Employee Management System can be used to view, create, and update employees within the system to ensure all critical employee information stays up-to-date.
 The user can choose from multiple menu options (outlined below) to select the action they would like to perform within the application.
