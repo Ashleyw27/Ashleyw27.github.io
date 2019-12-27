@@ -13,6 +13,8 @@ Type a task into a specific time block and click the save button located at the 
 
 [Click here to plan your day!](https://ashleyw27.github.io/day_planner/)
 
+![day planner](assets/images/day-planner.png)
+
 ## Technology
 * HTML
 * CSS
