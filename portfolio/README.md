@@ -11,6 +11,8 @@ This portfolio serves multiple purposes. It shares a little bit about me in the 
 
 [Click here to view the Portfolio!](https://ashleyw27.github.io/portfolio/)
 
+![portfolio](assets/images/portfolio.png)
+
 
 ## Technology
 The languages used to create this page are HTML and CSS.
