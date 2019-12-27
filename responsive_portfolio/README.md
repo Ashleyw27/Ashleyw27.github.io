@@ -1,4 +1,11 @@
 # Responsive Portfolio
+## User Story
+As a web developer
+
+I want a responsive deployed portfolio
+
+So that I can showcase my responsive applications to potential employers and clients
+
 ## Description
 This responsive portfolio is a replica of my original portfolio I created, but includes a few tweaks. I utilized a bootstrap CDN link within my 'head' tag which allowed me to utilize bootstrap's built-in responsiveness as well as incorporate bootstrap components within my code. Some of these components include a navbar and a contact form.
 
