@@ -1,4 +1,11 @@
 # Profile Generator
+## User Story
+As a product manager
+
+I want a developer profile generator
+
+So that I can easily prepare reports for stakeholders
+
 ## Description and Usage
 The Profile Generator application can be used to create a user profile outlining the below information (this information is pulled from the GitHub API via Axios calls):
 * Profile Image
