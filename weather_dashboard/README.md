@@ -13,6 +13,8 @@ You will notice that once you have searched for a city, the name of that city wi
 
 [Click here to check the weather!](https://ashleyw27.github.io/weather_dashboard/)
 
+![weather dashboard](assets/images/weather-dashboard.png)
+
 ## Technology
 * HTML
 * CSS
