@@ -1,4 +1,5 @@
 # Updated Weather Dashboard
+------------------------------------------------------------------------------------------------------------------------------
 ## Updates
 The updates made to the Weather Dashboard include:
 * Cleaner code - functions were added to reduce repetitiveness
