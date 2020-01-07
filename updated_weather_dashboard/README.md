@@ -1,4 +1,9 @@
-# Weather Dashboard
+# Updated Weather Dashboard
+## Updates
+The updates made to the Weather Dashboard include:
+* Cleaner code - functions were added to reduce repetitiveness
+* The weather data of the last city searched now populates upon page load
+------------------------------------------------------------------------------------------------------------------------------
 ## User Story
 As a traveler
 
@@ -11,7 +16,7 @@ This weather dashboard is powered by the AerisWeather API (a company located rig
 
 You will notice that once you have searched for a city, the name of that city will appear directly under the search bar. If you want to view that cities forecast again, simply click on the city name and its weather information will be returned to you. Even after reloading the page your previously searched cities will be availabe for you to view and click to obtain the weather forecast.
 
-[Click here to check the weather!](https://ashleyw27.github.io/weather_dashboard/)
+[Click here to check the weather!](https://ashleyw27.github.io/updated_weather_dashboard/)
 
 ![weather dashboard](assets/images/weather-dashboard.png)
 
