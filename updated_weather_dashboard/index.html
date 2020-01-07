@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Linking Bootstrap CDN-->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <!--Linking fontawesome-->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <!--Linking CSS file-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 weather"><h1>Weather Dashboard</h1></div>
+        </div>
+        <!--Input field and search button-->
+        <div class="row">
+            <div class="input-group mb-3 col-md-12">
+                <input id="city-input" type="text" class="form-control" placeholder="Ex: minneapolis,mn" aria-label="" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                   <button id="search-btn" class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i>Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Empty div to store city names from previous searches-->
+        <div class="row">
+            <div class="col-md-12 city-list"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 right-now remove"><h3>Current Weather:</h3></div>
+        </div>
+
+        <!--Empty divs to display current weather conditions-->
+        <div class="row">
+            <div class="col-md-12 current-weather remove">
+              <div class="city-weather"></div>
+              <img class="weather-icon" src="tbd" alt="weather-img"/>
+              <div class="temp"></div>
+              <div class="humid"></div>
+              <div class="wind-speed"></div>
+              <div class="uvi"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 forecast"><h3>5-Day Forecast:</h3></div>
+        </div>
+
+        <!--Empty divs to display the 5-day forecast weather observations-->
+        <div class="row">
+            <!--Day 1-->
+            <div class="col-md-2 future">
+                <div class="day-one"></div>
+                <img class="icon-one" src="tbd" alt="weather-img"/>
+                <div class="temp-one"></div>
+                <div class="temp-max-one"></div>
+                <div class="temp-min-one"></div>
+                <div class="humid-one"></div>
+            </div>
+            <!--Day 2-->
+            <div class="col-md-2 future">
+                <div class="day-two"></div>
+                <img class="icon-two" src="tbd" alt="weather-img"/>
+                <div class="temp-two"></div>
+                <div class="temp-max-two"></div>
+                <div class="temp-min-two"></div>
+                <div class="humid-two"></div>
+            </div>
+            <!--Day 3-->
+            <div class="col-md-2 future">
+                <div class="day-three"></div>
+                <img class="icon-three" src="tbd" alt="weather-img"/>
+                <div class="temp-three"></div>
+                <div class="temp-max-three"></div>
+                <div class="temp-min-three"></div>
+                <div class="humid-three"></div>
+            </div>
+            <!--Day 4-->
+            <div class="col-md-2 future">
+                <div class="day-four"></div>
+                <img class="icon-four" src="tbd" alt="weather-img"/>
+                <div class="temp-four"></div>
+                <div class="temp-max-four"></div>
+                <div class="temp-min-four"></div>
+                <div class="humid-four"></div>
+            </div>
+            <!--Day 5-->
+            <div class="col-md-2 future">
+                <div class="day-five"></div>
+                <img class="icon-five" src="tbd" alt="weather-img"/>
+                <div class="temp-five"></div>
+                <div class="temp-max-five"></div>
+                <div class="temp-min-five"></div>
+                <div class="humid-five"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!--Linking jQuery, moment.js, and external JavaScript file-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

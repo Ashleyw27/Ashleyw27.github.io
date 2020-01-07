@@ -1,0 +1,68 @@
+
+
+.weather {
+    background-color: rgb(56, 55, 55);
+    height: 75px;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.city-btn {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: rgb(32, 32, 143);
+    color: white;
+    border-radius: 5px;
+}
+
+.current-weather {
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.city-weather {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.temp, .humid, .wind-speed, .uvi {
+    font-size: 18px;
+}
+
+#search-btn {
+    background-color: rgb(32, 32, 143);
+    color: white;
+}
+
+.remove {
+    display: none;
+}
+
+.future {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(32, 32, 143);
+    margin-left: 20px;
+    display: block;
+}
+
+.day-one, .day-two, .day-three, .day-four, .day-five {
+    font-weight: bold;
+}
+
+.temp-min-one, .temp-max-one, .temp-min-two, .temp-max-two, .temp-min-three, .temp-max-three, .temp-min-four, .temp-max-four, .temp-min-five, .temp-max-five {
+    text-indent: 5px;
+    font-size: 12px;
+}
