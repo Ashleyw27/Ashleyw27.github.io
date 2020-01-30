@@ -1,6 +1,6 @@
 # Fitness Tracker
 ## User Story
-As a fitness enthusiest 
+As a fitness enthusiast  
 
 I want to be able to view, create, and track daily workouts. I want to be able to log multiple exercises in any given day. I should also be able to track the name, type, weight, sets, reps, and duration of each exercise 
 
@@ -13,7 +13,7 @@ To begin tracking your workouts, click the 'New Workout' button and select the e
 
 If you would like to view your workout stats, click the 'Dashboard' link in the top left corner of the Fitness Tracker main page. This dashboard allows you to see your progress over time.
 
-[Click here to start tracking your workouts!](https://ashleyw27.github.io/code_quiz/)
+[Click here to start tracking your workouts!](https://fitness-tracker2020.herokuapp.com/)
 
 ![Fitness Tracker](public/fit-track.png)
 
