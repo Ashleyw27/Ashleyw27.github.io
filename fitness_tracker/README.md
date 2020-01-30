@@ -15,7 +15,7 @@ If you would like to view your workout stats, click the 'Dashboard' link in the 
 
 [Click here to start tracking your workouts!](https://ashleyw27.github.io/code_quiz/)
 
-![Fitness Tracker](assets/images/code-quiz.png)
+![Fitness Tracker](public/fit-track.png)
 
 ## Technology
 * MongoDB
