@@ -74,10 +74,10 @@ startQuizBtn.addEventListener("click", function (event) {
     }, 1000);
 
      //Setting the style of the multiple choice buttons//
-     answer1.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; margin-left: 320px; width: 30%;");
-     answer2.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; margin-left: 320px; width: 30%;");
-     answer3.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; margin-left: 320px; width: 30%;");
-     answer4.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; margin-left: 320px; margin-bottom: 20px; width: 30%;");
+     answer1.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; width: 100%;");
+     answer2.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; width: 100%;");
+     answer3.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; width: 100%;");
+     answer4.setAttribute("style", "display: block; background-color: rgb(77, 1, 77); color: white; border-radius: 12px; margin-bottom: 20px; width: 100%;");
 });
 
 
