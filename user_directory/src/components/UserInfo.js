@@ -5,7 +5,7 @@ function UserInfo(props) {
   console.log(props)
 
   const resultsFirst = UserList.filter(user => user.name.first.toLowerCase().includes(props.search.toLowerCase()));
-
+  // Add onClick event handler that will call the handleSort method passed down from UserContainer component
   return (
     <div className="text-center">
       {resultsFirst.length > 0 ? (
