@@ -1,4 +1,5 @@
 import React from "react";
+import "./search.css";
 
 function SearchForm(props) {
   return (
@@ -6,7 +7,7 @@ function SearchForm(props) {
       <br></br>
       <div className="card text-center">
         <div className="form-group" style={{ padding: '22px' }}>
-          <label htmlFor="search">{props.searchtype} Search</label>
+          <label htmlFor="search">{props.searchtype} Search Users by First Name</label>
           <input
             onChange={props.handleInputChange}
             value={props.value}

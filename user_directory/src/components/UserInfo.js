@@ -1,5 +1,6 @@
 import React from "react";
 import UserList from "../data/directory.json";
+import "./style.css";
 
 function UserInfo(props) {
   console.log(props)
@@ -13,10 +14,9 @@ function UserInfo(props) {
         <table className="table table-bordered table-sm" cellSpacing="0" width="100%">
           <thead>
             <tr>
-              <th scope="col">User</th>
-              <th scope="col" onClick={() => props.sortBy("first")}>First Name</th>
-              <th scope="col" onClick={() => props.sortBy("last")}>Last Name</th>
-              <th scope="col" onClick={() => props.sortBy("position")}>Position</th>
+              <th scope="col" onClick={() => props.sortBy("first")}>First Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+              <th scope="col" onClick={() => props.sortBy("last")}>Last Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+              <th scope="col" onClick={() => props.sortBy("position")}>Position <i class="fa fa-sort" aria-hidden="true"></i></th>
               <th scope="col">Email</th>
               <th scope="col">Phone</th>
             </tr>
@@ -24,7 +24,6 @@ function UserInfo(props) {
           <tbody>
             {resultsFirst.map(result => (
               <tr key={result.id}>
-                <td>{result.picture}</td>
                 <td><b>{result.first}</b></td>
                 <td>{result.last}</td>
                 <td>{result.position}</td>
