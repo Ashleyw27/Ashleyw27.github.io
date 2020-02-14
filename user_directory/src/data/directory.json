@@ -2,110 +2,90 @@
 	{
 		"id": 1,
 		"picture": "https://randomuser.me/api/portraits/med/women/5.jpg",
-		"name": {
-            "first": "Martha",
-            "last": "Wright"
-        },
-        "gender": "female",
+        "first": "Martha",
+        "last": "Wright",
+        "position": "Director of Sales",
         "email": "martha.wright@example.com",
         "cell": "(625)-245-9070"
 	},
 	{
 		"id": 2,
 		"picture": "https://randomuser.me/api/portraits/thumb/women/32.jpg",
-		"name": {
-            "first": "Sandra",
-            "last": "Butler"
-        },
-        "gender": "female",
+        "first": "Sandra",
+        "last": "Butler",
+        "position": "Sales Associate",
         "email": "sandra.butler@example.com",
         "cell": "(414)-577-0876"
 	},
     {
 		"id": 3,
 		"picture": "https://randomuser.me/api/portraits/thumb/women/79.jpg",
-		"name": {
-            "first": "Peggy",
-            "last": "Schmidt"
-        },
-        "gender": "female",
+        "first": "Peggy",
+        "last": "Schmidt",
+        "position": "Sales Assistant",
         "email": "peggy.schmidt@example.com",
         "cell": "(651)-765-7432"
 	},
 	{
 		"id": 4,
 		"picture": "https://randomuser.me/api/portraits/thumb/men/71.jpg",
-		"name": {
-            "first": "John",
-            "last": "Watts"
-        },
-        "gender": "male",
+        "first": "John",
+        "last": "Watts",
+        "position": "Sales Manager",
         "email": "john.watts@example.com",
         "cell": "(612)-291-7846"
 	},
     {
 		"id": 5,
 		"picture": "https://randomuser.me/api/portraits/thumb/men/20.jpg",
-		"name": {
-            "first": "Austin",
-            "last": "Barnett"
-        },
-        "gender": "male",
+        "first": "Austin",
+        "last": "Barnett",
+        "position": "Director of Marketing",
         "email": "austin.barnett@example.com",
         "cell": "(784)-467-2459"
 	},
     {
 		"id": 6,
 		"picture": "https://randomuser.me/api/portraits/thumb/women/85.jpg",
-		"name": {
-            "first": "Erika",
-            "last": "Carr"
-        },
-        "gender": "female",
+        "first": "Erika",
+        "last": "Carr",
+        "position": "Marketing Manager",
         "email": "erika.carr@example.com",
         "cell": "(864)-358-6785"
 	},
     {
 		"id": 7,
 		"picture": "https://randomuser.me/api/portraits/thumb/women/80.jpg",
-		"name": {
-            "first": "Letitia",
-            "last": "Walters"
-        },
-        "gender": "female",
+        "first": "Letitia",
+        "last": "Walters",
+        "position": "Marketing Assistant",
         "email": "letitia.walters@example.com",
         "cell": "(779)-250-0643"
 	},
     {
 		"id": 8,
 		"picture": "https://randomuser.me/api/portraits/thumb/men/64.jpg",
-		"name": {
-            "first": "Mason",
-            "last": "Dean"
-        },
-        "gender": "male",
+        "first": "Mason",
+        "last": "Dean",
+        "position": "Office Manager",
         "email": "mason.dean@example.com",
         "cell": "(865)-246-3790"
 	},
     {
 		"id": 9,
 		"picture": "https://randomuser.me/api/portraits/thumb/women/63.jpg",
-		"name": {
-            "first": "Bobbie",
-            "last": "Jimenez"
-        },
-        "gender": "female",
+        "first": "Bobbie",
+        "last": "Jimenez",
+        "position": "CEO",
         "email": "bobbie.jimenez@example.com",
         "cell": "(612)-935-3678"
 	},
     {
 		"id": 10,
 		"picture": "https://randomuser.me/api/portraits/thumb/women/49.jpg",
-		"name": {
-            "first": "Nevaeh",
-            "last": "Young"
-        },
-        "gender": "female",
+        "first": "Nevaeh",
+        "last": "Young",
+        "position": "CFO",
         "email": "nevaeh.young@example.com",
         "cell": "(763)-935-5674"
 	}

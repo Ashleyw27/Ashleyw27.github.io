@@ -7,27 +7,31 @@ import UserInfo from "./UserInfo";
 import UserList from "../data/directory.json";
 
 class UserContainer extends Component {
-  state = {
-    result: [],
-    search: ""
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      result: UserList,
+      search: "",
+    }
+    this.sortBy = this.sortBy.bind(this);
+  }
+  sortBy = (key) => {
+    this.setState({
+      results: UserList.sort((a, b) => (a[key] > b[key]) ? 1 : -1)
+    })
+  }
 
-  // When this component mounts, search for the movie "The Matrix"
   componentDidMount() {
     this.searchUsersFirst();
   }
 
+
   searchUsersFirst = () => {
     const searchQuery = this.state.search.trim();
-    const searchResultsFirst = UserList.filter((user) => user.name.first === searchQuery);
+    const searchResultsFirst = UserList.filter((user) => user.first === searchQuery);
     this.setState({ 'result': searchResultsFirst });
   };
 
-  searchUsersLast = () => {
-    const searchQuery = this.state.search.trim();
-    const searchResultsLast = UserList.filter((user) => user.name.last === searchQuery);
-    this.setState({ 'result': searchResultsLast });
-  };
 
   handleInputChange = event => {
     const value = event.target.value;
@@ -37,7 +41,7 @@ class UserContainer extends Component {
     });
   };
 
-  // When the form is submitted, search the OMDB API for the value of `this.state.search`
+
   handleFormSubmit = event => {
     event.preventDefault();
     this.searchUsersFirst();
@@ -49,7 +53,6 @@ class UserContainer extends Component {
         <Row>
           <Col size="md-12">
             <SearchForm
-              searchtype="First Name"
               value={this.state.search}
               handleInputChange={this.handleInputChange}
               handleFormSubmit={this.handleFormSubmit}
@@ -59,7 +62,10 @@ class UserContainer extends Component {
         <Row>
           <Col size="md-12">
             <hr />
-            <UserInfo search={this.state.search} />
+            <UserInfo
+              search={this.state.search}
+              sortBy={this.sortBy}
+            />
           </Col>
         </Row>
       </Container >
