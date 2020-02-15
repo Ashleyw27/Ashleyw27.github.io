@@ -11,7 +11,7 @@ The user directory allows you to search the entire employee list by first name b
 
 [Click here to try the User Directory!](https://ashleyw27.github.io/code_quiz/)
 
-![user directory](assets/images/code-quiz.png)
+![user directory](public/flower.png)
 
 ## Technology
 * React.js
