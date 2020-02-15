@@ -1,5 +1,5 @@
 .table-title {
-    color: blue;
+    color: rgb(53, 147, 175);
 }
 
 body {
@@ -11,5 +11,6 @@ table {
 }
 
 th {
-    background-color: rgb(247, 228, 108)
+    background-color: rgb(247, 228, 108);
+    font-weight: bold;
 }
