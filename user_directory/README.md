@@ -1,3 +1,30 @@
+# User Directory
+## User Story
+As a user
+
+I want to be able to view my entire employee directory at once
+
+So that I have quick access to their information
+
+## Description and Usage
+The user directory allows you to search the entire employee list by first name by typing a name in the search box located at the top of the application. It also allows for data filtering by clicking the column headers that contain the up/down filter arrows. Doing so will filter the data in that column in alphabetical order.
+
+[Click here to try the User Directory!](https://ashleyw27.github.io/code_quiz/)
+
+![user directory](assets/images/code-quiz.png)
+
+## Technology
+* React.js
+  
+## What I Learned
+I learned many new concepts and skills while creating this user directory. A few of which include:
+* React.js
+* React components
+* State
+* Lifecycle methods
+
+
+******************************************************************************************************************************
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
