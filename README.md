@@ -8,5 +8,6 @@ Enjoy!
 
 
 [Click here to view my Portfolio](https://ashleyw27.github.io/updated_portfolio/home.html)
+[Click here to view my LinkedIn Profile](https://www.linkedin.com/in/ashley-wegwerth/)
 
 
